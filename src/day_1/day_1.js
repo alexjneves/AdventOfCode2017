@@ -1,5 +1,5 @@
-const indexPlusOne = (arr, i) => i + 1
-const halfWayIndex = (arr, i) => i + (arr.length / 2)
+const indexPlusOne = (arr, i) => i + 1;
+const halfWayIndex = (arr, i) => i + (arr.length / 2);
 
 const pairDigitsWithNextDigit = (digits, getNextIndex) => {
     const pairs = [];
@@ -7,8 +7,8 @@ const pairDigitsWithNextDigit = (digits, getNextIndex) => {
     for (let i = 0; i < digits.length; ++i) {
         const digit = digits[i];
 
-        const nextIndex = getNextIndex(digits, i) % digits.length
-        const next = digits[nextIndex]
+        const nextIndex = getNextIndex(digits, i) % digits.length;
+        const next = digits[nextIndex];
 
         pairs.push({
             value: digit,
@@ -33,7 +33,7 @@ const solveCaptcha = (value, getNextIndex) => {
         .filter(p => p.value == p.next)
         .map(p => p.value)
         .reduce((total, value) => total + value, 0);
-}
+};
 
 module.exports = {
     solveCaptcha: solveCaptcha,
