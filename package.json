@@ -1,0 +1,23 @@
+{
+  "name": "adventofcode2017",
+  "version": "1.0.0",
+  "description": "AdventOfCode2017",
+  "main": "advent_calendar.js",
+  "scripts": {
+    "test": "mocha ./test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexjneves/AdventOfCode2017.git"
+  },
+  "author": "Alex Neves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexjneves/AdventOfCode2017/issues"
+  },
+  "homepage": "https://github.com/alexjneves/AdventOfCode2017#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  }
+}
