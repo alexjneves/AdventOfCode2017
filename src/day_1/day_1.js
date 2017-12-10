@@ -9,8 +9,6 @@ const pairDigitsWithNextDigit = (digits, getNextIndex) => {
 
         const nextIndex = getNextIndex(digits, i) % digits.length
         const next = digits[nextIndex]
-        //const nextIndex = nextIndex(digits, i) % digits.length
-        //const next = nextIndex == digits.length ? digits[0] : digits[nextIndex];
 
         pairs.push({
             value: digit,
